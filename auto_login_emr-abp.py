@@ -10,7 +10,7 @@ for _ in range(10):
     driver.get(url)
 
     driver.find_element(By.ID,"authUser").send_keys("admin")
-    driver.find_element(By.ID,"clearPass").send_keys("Sup3r123$")
+    driver.find_element(By.ID,"clearPass").send_keys("pass")
     driver.find_element(By.ID,"login-button").click()
     print(i)
     i += 1
