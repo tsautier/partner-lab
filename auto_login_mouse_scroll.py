@@ -27,7 +27,7 @@ for _ in range(8):
     for char in "admin":
         auth_user.send_keys(char)
         time.sleep(random.uniform(0.1, 0.3))  # Add random delay between keystrokes
-    for char in "Sup3r123$":
+    for char in "pass":
         clear_pass.send_keys(char)
         time.sleep(random.uniform(0.1, 0.3))  # Add random delay between keystrokes
 
