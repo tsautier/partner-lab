@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
 
-url = "https://emr.fortiseahk.com"
+url = "http://emr.fortiseahk.com"
 i = 1
 for _ in range(10):
 
