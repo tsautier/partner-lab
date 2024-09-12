@@ -8,7 +8,7 @@ import random
 
 driver = webdriver.Chrome()
 
-url = "https://emr.fortiseahk.com"
+url = "http://emr.fortiseahk.com"
 
 for _ in range(8):
     driver.get(url)
