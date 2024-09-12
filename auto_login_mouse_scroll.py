@@ -6,7 +6,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 import random
 
-driver = webdriver.Firefox()
+driver = webdriver.Chrome()
 
 url = "https://emr.fortiseahk.com"
 
