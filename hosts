@@ -1,0 +1,21 @@
+127.0.0.1 localhost
+127.0.1.1 lubuntu
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+
+10.2.2.101      dvwa.fortiworkshop.nl
+10.2.2.102      juiceshop.fortiworkshop.nl
+10.2.2.103      xxx.fortinet.demo
+10.2.2.104      emr.fortiseahk.com
+10.2.2.104      fad.emr.fortiseahk.com
+10.2.2.105      fwb.emr.fortiseahk.com
+10.2.2.106      fwb-ml.fortinet.demo
+10.2.2.1        fad.fortinet.demo
+10.2.2.2        fwb.fortinet.demo
+10.2.2.3        fgt.fortinet.demo
