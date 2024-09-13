@@ -60,7 +60,7 @@ initall() {
   SUBMIT="submit"
   CONTENTTYPE="application/x-www-form-urlencoded"
  # CONTENTTYPE="text/html"
-  URL="http://fweb-ml.demo/index.html"
+  URL="http://fwb-ml.fortinet.demo/index.html"
   USERAGENT="Mozilla/Firefox"
   REQUESTTIMEOUT=3
   IPALLOW="212.212.212.212"
