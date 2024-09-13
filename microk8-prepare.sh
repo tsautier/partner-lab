@@ -46,8 +46,8 @@ snap install microk8s --classic --channel=1.28/stable
 #chmod 600 /var/snap/microk8s/2948/credentials/client.config
   
 #Allowing user fortinet to manage microk8
-usermod -a -G microk8s seahk
-chown -f -R seahk ~/.kube
+usermod -a -G microk8s fortinet
+chown -f -R fortinet ~/.kube
                                                                                                                                                                                              
   
 #enable services
@@ -61,7 +61,7 @@ microk8s enable helm3
 ufw allow in on cni0 && ufw allow out on cni0
 ufw default allow routed                                                                                                                                                                     
                                                                                                                                                                                              
-cd /home/seahk
+cd /home/fortinet
                                                                                                                                                                                              
   
 #Add fortinet repo
