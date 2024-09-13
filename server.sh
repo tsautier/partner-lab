@@ -15,5 +15,5 @@ docker-compose --version
 # Bring up the Docker Compose services in detached mode
 docker-compose up -d
 
-#Bring up Finance Web for ML use-case
+# Bring up Finance Web for ML use-case
 docker run -d -p 8004:80 -v /root/partner-lab/fweb-ml-test:/usr/local/apache2/htdocs/  httpd
