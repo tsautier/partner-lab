@@ -39,7 +39,8 @@ hostnamectl set-hostname 'ingress'
   
 echo -e "\n===========================\n Installing MicroK8/Curl and Helm \n==========================="
 # installing Microk8, Curl and Helm
-snap install microk8s --classic --channel=1.28/stable
+#snap install microk8s --classic --channel=1.28/stable
+snap install microk8s --classic
                                                                                                                                                                                              
   
 #Remove group-readable
