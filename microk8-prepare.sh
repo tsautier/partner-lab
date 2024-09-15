@@ -39,7 +39,8 @@ hostnamectl set-hostname 'ingress'
   
 echo -e "\n===========================\n Installing MicroK8/Curl and Helm \n==========================="
 # installing Microk8, Curl and Helm
-snap install microk8s --classic --channel=1.28/stable
+#snap install microk8s --classic --channel=1.28/stable
+snap install microk8s --classic
                                                                                                                                                                                              
   
 #Remove group-readable
@@ -82,7 +83,7 @@ microk8s kubectl apply -f https://raw.githubusercontent.com/mduijm/fortidemo/mai
                                                                                                                                                                                              
   
 # add kubectl alias
-echo "alias kc='microk8s kubectl'" >> /home/seahk/.bashrc
+echo "alias kc='microk8s kubectl'" >> /home/fortinet/.bashrc
 source ~/.bashrc
                                                                                                                                                                                              
   
