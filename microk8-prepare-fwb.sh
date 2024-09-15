@@ -3,6 +3,8 @@
 ## preparing machine and installing microk8
 ## version 1.1
 # M. Duijm - Fortinet CSE
+## version 1.2 --> for FortiWEB Ingress Controller
+# Ibnu Sina -- Fortinet RSE - SEA
                                                                                                                                                                                              
   
 #Setting up variables
