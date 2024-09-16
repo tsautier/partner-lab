@@ -75,10 +75,10 @@ microk8s helm3 repo add FortiWeb-ingress-controller https://fortinet.github.io/f
 microk8s helm3 repo update                                                                                                                                                                   
 
 #Create Namespace
-microk8s kubectl create namespace fortifwb-ingress                                                                                                                                                                                                                                                                                                                                      
+microk8s kubectl create namespace fortiweb-ingress                                                                                                                                                                                                                                                                                                                                      
   
-# Install fortiadc ingress controller into namespace created above
-microk8s helm3 install ingress-controller --namespace fortifwb-ingress FortiWeb-ingress-controller/fwb-k8s-ctrl
+# Install fortiweb ingress controller into namespace created above
+microk8s helm3 install ingress-controller --namespace fortiweb-ingress FortiWeb-ingress-controller/fwb-k8s-ctrl
                                                                                                                                                                                              
   
 # Install demo application hello-minikube to have some example webserver.
