@@ -87,6 +87,7 @@ microk8s kubectl apply -f https://raw.githubusercontent.com/mduijm/fortidemo/mai
   
 # add kubectl alias
 echo "alias kc='microk8s kubectl'" >> /home/fortinet/.bashrc
+echo "alias kubectl='microk8s kubectl'" >> /home/fortinet/.bashrc
 source ~/.bashrc
                                                                                                                                                                                              
   
