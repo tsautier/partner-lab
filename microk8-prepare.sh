@@ -56,7 +56,8 @@ microk8s enable dns
   
 microk8s enable helm3                                                                                                                                                                        
   
-                                                                                                                                                                                             
+#NAT egresss traffic from POD
+sudo iptables -t nat -A POSTROUTING -s 10.1.0.0/16 -o ens3 -j MASQUERAD                                                                                                                                                                                             
   
 #update firewall
 ufw allow in on cni0 && ufw allow out on cni0
