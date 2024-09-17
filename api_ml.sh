@@ -13,7 +13,7 @@ do
  then
   curldata="{\"login\":\"acbde$k\",\"password\":\"my_password$k\",\"loginid\":$RANDOM ,\"rights\": [ \"sales\", \"finance\", \"admin\" ]}"
  fi
- curl http://api-ml-demo:8090/sales/ -k -H "Content-Type: application/json" --data-raw "$curldata"
+ curl http://fad-api.fortinet.demo:8090/sales/ -k -H "Content-Type: application/json" --data-raw "$curldata"
 done
 
 
