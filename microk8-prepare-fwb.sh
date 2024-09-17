@@ -62,7 +62,11 @@ microk8s enable helm3
   
 #update firewall
 ufw allow in on cni0 && ufw allow out on cni0
-ufw default allow routed                                                                                                                                                                     
+ufw default allow routed         
+
+#NAT egresss traffic from POD
+sudo iptables -t nat -A POSTROUTING -s 10.1.0.0/16 -o ens3 -j MASQUERADE
+
                                                                                                                                                                                              
 cd /home/fortinet
                                                                                                                                                                                              
