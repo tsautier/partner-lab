@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: minimal-ingress
   annotations: {
-    "fortiweb-ip" : "10.1.1.4",
+    "fortiweb-ip" : "10.1.1.2",
     "fortiweb-login" : "fwb-login",
     "fortiweb-ctrl-log" : "disable",
     "virtual-server-ip" : "10.2.2.130",
