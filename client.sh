@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Download the lubuntu-setup.sh script from the specified URL
+wget http://10.2.2.254/static/docs/latest/lubuntu-setup.sh
+
+# Run the downloaded script with sudo
+if [[ -f "lubuntu-setup.sh" ]]; then
+   bash lubuntu-setup.sh
+else
+  echo "Failed to download lubuntu-setup.sh."
+fi
+
 # Define the entries to be added
 HOSTS_ENTRIES="
 10.2.2.104      emr.fortiseahk.com
