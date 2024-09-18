@@ -41,6 +41,10 @@ cat << EOF >> /etc/hosts
 10.2.2.105      fwb.emr.fortiseahk.com
 10.2.2.106      fwb-ml.fortinet.demo
 10.2.2.107      fad-al.fortinet.demo
+10.2.2.108      fwb-api.fortinet.demo                                                                                                                                                          
+10.2.2.109      fad-api.fortinet.demo                                                                                                                                                          
+10.2.2.110      fwb-test.fortinet.demo                                                                                                                                                         
+10.2.2.111      fad-test.fortinet.demo    
 10.2.2.1        fad.fortinet.demo                                                                                                                                                              
 10.2.2.2        fwb.fortinet.demo                                                                                                                                                              
 10.2.2.3        fgt.fortinet.demo                                                                                                                                                              
