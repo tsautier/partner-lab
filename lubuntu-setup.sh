@@ -32,7 +32,7 @@ function endmsg {
                                                                                                                                                                                                
 # Populate hosts file so we can use FQDN's instead of IP-addresses                                                                                                                             
 startmsg "Populating /etc/hosts file"                                                                                                                                                          
-cat << EOF >> /etc/hosts                                                                                                                                                                       
+cat << EOF >> /etc/hosts                                                                                                                                                                  
 10.2.2.101      dvwa.fortiworkshop.nl
 10.2.2.102      juiceshop.fortiworkshop.nl
 10.2.2.103      xxx.fortinet.demo
