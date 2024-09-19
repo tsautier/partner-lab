@@ -265,7 +265,7 @@ firerequest-Exploitsqli() {
 customrequest() {
   echo ""
   read -p "Amount of requests: " COUNT
-  read -p "URL (https://fweb-ml.demo/index.html) " URL
+  read -p "URL (http://fwb-ml.fortinet.demo/index.html) " URL
   read -p "Method (GET, POST, PUT, DELETE, OPTIONS, HEAD) : " METHODIN
   read -p "Parameter name : " PARAMETER
   read -p "Parameter type (date-short, date-long, postal, email, phone, random, number-small, number-big) : " PARAMETERTYPE
@@ -273,7 +273,7 @@ customrequest() {
 
   METHOD=`echo $METHODIN | tr [:lower:] [:upper:]`
 
-  [ -z $URL ] && URL="https://fweb-ml.demo/index.html"
+  [ -z $URL ] && URL="http://fwb-ml.fortinet.demo/index.html"
   if [ -z $COUNT ] || [ -z $URL ] || [ -z $METHODIN ] || [ -z $PARAMETER ] || [ -z $PARAMETERTYPE ]
   then
     echo "ERROR: empty input detected"
