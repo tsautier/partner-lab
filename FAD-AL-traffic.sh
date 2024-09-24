@@ -8,6 +8,7 @@
 # 2019102301 : Ferry Kemps : Date type fix, added date-short/date-long data type, reduced 5.000 request to 3.000
 # 2019102302 : Ferry Kemps : Added cmdline options support
 # 2020 01 : Teguh : Modified for CBC - especially on curl parameters
+# 2024 09 : Ibnu : update for FAD Adaptive learning
 
   DEBUG="enable"
 
