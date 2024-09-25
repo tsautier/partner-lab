@@ -21,5 +21,3 @@ docker run -d -p 8010:80 -v /root/partner-lab/test1:/usr/local/apache2/htdocs/ h
 docker run -d -p 8011:80 -v /root/partner-lab/test2:/usr/local/apache2/htdocs/ httpd 
 docker run -d -p 8012:80 -v /root/partner-lab/test3:/usr/local/apache2/htdocs/ httpd 
 docker run -d -p 8006:8088 teguhasiong/api4fun
-docker run -d -p 8007:8080 fortinetdemo/petstore
-docker run -d -p 8008:80 fortinetdemo/bwapp
