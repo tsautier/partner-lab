@@ -15,7 +15,7 @@
 # Check options given
 if [ $# -gt 0 ]; then
    case $1 in
-  --debug) DEBUG="enable";;
+  --debug) DEBUG="disable";;
   --help) echo ""; echo "Usage: ${0} [options...]"
      echo "Options:"
      echo "  --debug		Turn on debug to show requests"
