@@ -61,7 +61,7 @@ initall() {
   SUBMIT="submit"
   CONTENTTYPE="application/x-www-form-urlencoded"
  # CONTENTTYPE="text/html"
-  URL="http://fad-ml.fortinet.demo/index.html"
+  URL="http://fad-al.fortinet.demo/index.html"
   USERAGENT="Mozilla/Firefox"
   REQUESTTIMEOUT=3
   IPALLOW="212.212.212.212"
@@ -137,7 +137,7 @@ firerequest-learn() {
      let "COUNTER += 1"  # Increment count.
      printprogress $COUNTER
      if [ $COUNTER -eq 200 ] || [ $COUNTER -eq 450 ]; then
-      echo -e "\nPlease check the HMM Learning Stage... Then press [Enter] to continue....."
+      echo -e "\nPlease check the Learning View... Then press [Enter] to continue....."
       read -r
      fi
      
@@ -266,7 +266,7 @@ firerequest-Exploitsqli() {
 customrequest() {
   echo ""
   read -p "Amount of requests: " COUNT
-  read -p "URL (http://fad-ml.fortinet.demo/index.html) " URL
+  read -p "URL (http://fad-al.fortinet.demo/index.html) " URL
   read -p "Method (GET, POST, PUT, DELETE, OPTIONS, HEAD) : " METHODIN
   read -p "Parameter name : " PARAMETER
   read -p "Parameter type (date-short, date-long, postal, email, phone, random, number-small, number-big) : " PARAMETERTYPE
@@ -274,7 +274,7 @@ customrequest() {
 
   METHOD=`echo $METHODIN | tr [:lower:] [:upper:]`
 
-  [ -z $URL ] && URL="http://fad-ml.fortinet.demo/index.html"
+  [ -z $URL ] && URL="http://fad-al.fortinet.demo/index.html"
   if [ -z $COUNT ] || [ -z $URL ] || [ -z $METHODIN ] || [ -z $PARAMETER ] || [ -z $PARAMETERTYPE ]
   then
     echo "ERROR: empty input detected"

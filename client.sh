@@ -12,7 +12,7 @@ fi
 
 # Define the entries to be added
 HOSTS_ENTRIES="
-10.2.2.104      emr.fortiseahk.com
+10.2.2.105      emr.fortiseahk.com
 10.2.2.104      fad.emr.fortiseahk.com
 10.2.2.105      fwb.emr.fortiseahk.com
 10.2.2.106      fwb-ml.fortinet.demo

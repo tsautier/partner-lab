@@ -16,6 +16,7 @@ ff02::3 ip6-allhosts
 10.2.2.104      fad.emr.fortiseahk.com
 10.2.2.105      fwb.emr.fortiseahk.com
 10.2.2.106      fwb-ml.fortinet.demo
+10.2.2.107      fad-al.fortinet.demo
 10.2.2.1        fad.fortinet.demo
 10.2.2.2        fwb.fortinet.demo
 10.2.2.3        fgt.fortinet.demo
