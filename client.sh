@@ -25,7 +25,7 @@ HOSTS_ENTRIES="
 
 # Backup the original /etc/hosts
 cp /etc/hosts /etc/hosts.backup
-cp ~/partner-lab/client_script ~/Desktop/
+cp /home/lubuntu/partner-lab/client_script /home/lubuntu/Desktop/
 # Append the new entries
 echo "$HOSTS_ENTRIES" >> /etc/hosts
 
