@@ -5,7 +5,7 @@ echo " *** You may continue while packages are installed ***"
 startmsg "Installing additional packages"                                                                                                                                                      
 #skipping apt update to avoid killing lubuntu with python3-pip install                                                                                                                         
 #sudo apt update > /dev/null 2>&1                                                                                                                                                              
-sudo apt install -y -qq curl ssh python3-pip> /dev/null 2>&1                                                                                                                                   
+sudo apt install -y -qq python3-pip > /dev/null 2>&1                                                                                                                                   
 endmsg                                                                                                                                                                                         
                                                                                                                                                                                                
 # Making space on / partition                                                                                                                                                                  
