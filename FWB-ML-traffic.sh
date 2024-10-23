@@ -9,7 +9,7 @@
 # 2019102302 : Ferry Kemps : Added cmdline options support
 # 2020 01 : Teguh : Modified for CBC - especially on curl parameters
 
-  DEBUG="enable"
+  DEBUG="disable"
 
 # Check options given
 if [ $# -gt 0 ]; then
