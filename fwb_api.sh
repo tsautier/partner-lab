@@ -1,4 +1,4 @@
-for k in {1..10}
+for k in {1..110}
 do
  x=$((1 + $RANDOM % 3))
  if [ $x -eq 1 ] 
@@ -25,27 +25,12 @@ curl -k http://fwb-api.fortinet.demo/news?id=$idku -H "Content-Type: application
 done
 
 
-for k in {1..11}
+for k in {1..110}
 do
 curldata="{\"user\":\"ahmad $k\"}"
 curl http://fwb-api.fortinet.demo/love/food -k -H "Content-Type: application/json" -d "$curldata"
 curl http://fwb-api.fortinet.demo/love/drink -k -H "Content-Type: application/json" -d "$curldata"
 done
-
-
-
-curl http://fwb-api.fortinet.demo/101/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/102/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/1101/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/1102/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/1201/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/1202/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/1011/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/1012/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/11011/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/11012/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/12011/ -k -H "Content-Type: application/json"
-curl http://fwb-api.fortinet.demo/12012/ -k -H "Content-Type: application/json"
 
 
 
