@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Update package lists
-apt update
+#apt update
+apt update && apt clean && rm -rf /var/lib/apt/lists/*
 
 # Download Docker Compose
 curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
