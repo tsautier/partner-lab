@@ -2,7 +2,7 @@
 
 # Update package lists
 #apt update
-apt update && apt clean && rm -rf /var/lib/apt/lists/*
+sudo apt update && sudo apt upgrade -y
 
 # 3. Install required dependencies
 sudo apt install ca-certificates curl gnupg lsb-release -y
