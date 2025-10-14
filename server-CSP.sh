@@ -4,6 +4,40 @@
 #apt update
 apt update && apt clean && rm -rf /var/lib/apt/lists/*
 
+# 3. Install required dependencies
+sudo apt install ca-certificates curl gnupg lsb-release -y
+
+# 4. Add Docker’s official GPG key
+sudo mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
+sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+# 5. Add Docker repository
+echo \
+  "deb [arch=$(dpkg --print-architecture) \
+  signed-by=/etc/apt/keyrings/docker.gpg] \
+  https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# 6. Update package list again
+sudo apt update
+
+# 7. Install Docker Engine, CLI, containerd and plugins
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
+
+# 8. Enable and start the Docker service
+sudo systemctl enable docker
+sudo systemctl start docker
+
+# 9. Verify installation
+docker --version
+docker compose version
+
+# 10. (Optional) Run Docker without sudo
+sudo usermod -aG docker $USER
+newgrp docker
+
 # Download Docker Compose
 curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
